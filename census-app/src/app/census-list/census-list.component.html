@@ -1,0 +1,10 @@
+<h2>Census Records</h2>
+
+<div *ngFor="let record of censusRecords">
+  <p>Year of Census: {{ record.year }}</p>
+  <p>Census Taker's Name: {{ record.census_taker }}</p>
+  <p>Number of People in Household: {{ record.num_people }}</p>
+  <p>Household State: {{ record.state }}</p>
+  <p>Household City: {{ record.city }}</p>
+  <button (click)="deleteRecord(record._id)">Delete</button>
+</div>
